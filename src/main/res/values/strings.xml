@@ -227,6 +227,7 @@
         <string name="text_category_stationery_and_office">Stationery and office: In this section, you will find school and office supplies, such as notebooks, pens, pencils, diaries and computer items.</string>
         <string name="text_category_others">Others: seasonal or unforeseen items.</string>
         <string name="text_total_purchase_value_forecast">Total Purchase Value Forecast</string>
+    <string name="descricao_imagem_fundo">fundo da imagem</string>
 
 
 </resources>

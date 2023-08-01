@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_gravity="center"
     android:background="@drawable/background"
-    tools:context=".Cadastro">
+    tools:context=".SingUp">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -51,21 +51,25 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 style="@style/edit_text"
+                android:layout_height="48dp"
                 android:drawableStart="@drawable/ic_baseline_person_24"
                 android:hint="@string/Nome" />
 
             <com.google.android.material.textfield.TextInputEditText
                 style="@style/edit_text"
+                android:layout_height="48dp"
                 android:drawableStart="@drawable/ic_baseline_person_24"
                 android:hint="@string/Email" />
 
             <com.google.android.material.textfield.TextInputEditText
                 style="@style/edit_text"
+                android:layout_height="48dp"
                 android:drawableStart="@drawable/ic_baseline_person_24"
                 android:hint="@string/Senha" />
 
             <com.google.android.material.textfield.TextInputEditText
                 style="@style/edit_text"
+                android:layout_height="48dp"
                 android:drawableStart="@drawable/ic_baseline_person_24"
                 android:hint="@string/Confirmar" />
 

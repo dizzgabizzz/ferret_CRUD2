@@ -1,52 +1,15 @@
 package com.example.ferret;
+import java.sql.Date;
 
 public class User {
 
-    //marcação
-    public static final String TAG ="User Entity";
+    private static final String TAG = "User";
 
-    //colunas
+
     private int mId;
     private String mFullName;
     private String mUserName;
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "mId=" + mId +
-                ", mFullName='" + mFullName + '\'' +
-                ", mUserName='" + mUserName + '\'' +
-                ", mPassword='" + mPassword + '\'' +
-                ", mEmail='" + mEmail + '\'' +
-                ", mCreateDate=" + mCreateDate +
-                ", mApiKey='" + mApiKey + '\'' +
-                ", mResetPasswordOtp='" + mResetPasswordOtp + '\'' +
-                ", mResetPasswordCreatedAt=" + mResetPasswordCreatedAt +
-                '}';
-    }
-
-    public User(String fullName, String userName, String password, String email, long createDate, String apiKey, String resetPasswordOtp, long resetPasswordCreatedAt) {
-        mFullName = fullName;
-        mUserName = userName;
-        mPassword = password;
-        mEmail = email;
-        mCreateDate = createDate;
-        mApiKey = apiKey;
-        mResetPasswordOtp = resetPasswordOtp;
-        mResetPasswordCreatedAt = resetPasswordCreatedAt;
-    }
-
-    public User(int id, String fullName, String userName, String password, String email, long createDate, String apiKey, String resetPasswordOtp, long resetPasswordCreatedAt) {
-        mId = id;
-        mFullName = fullName;
-        mUserName = userName;
-        mPassword = password;
-        mEmail = email;
-        mCreateDate = createDate;
-        mApiKey = apiKey;
-        mResetPasswordOtp = resetPasswordOtp;
-        mResetPasswordCreatedAt = resetPasswordCreatedAt;
-    }
+    private String mPassword;
 
     public int getId() {
         return mId;
@@ -81,7 +44,12 @@ public class User {
     }
 
     public String getEmail() {
-        return mEmail;
+        return mEmail.toLowerCase().trim();
+    }
+
+    public User(String password, String email) {
+        mPassword = password;
+        mEmail = email;
     }
 
     public void setEmail(String email) {
@@ -120,14 +88,48 @@ public class User {
         mResetPasswordCreatedAt = resetPasswordCreatedAt;
     }
 
-    private String mPassword;
     private String mEmail;
+
+    public User(String fullName, String userName, String password, String email, long createDate, String apiKey, String resetPasswordOtp, long resetPasswordCreatedAt) {
+        mFullName = fullName;
+        mUserName = userName;
+        mPassword = password;
+        mEmail = email;
+        mCreateDate = createDate;
+        mApiKey = apiKey;
+        mResetPasswordOtp = resetPasswordOtp;
+        mResetPasswordCreatedAt = resetPasswordCreatedAt;
+    }
+
+    public User(int id, String fullName, String userName, String password, String email, long createDate, String apiKey, String resetPasswordOtp, long resetPasswordCreatedAt) {
+        mId = id;
+        mFullName = fullName;
+        mUserName = userName;
+        mPassword = password;
+        mEmail = email;
+        mCreateDate = createDate;
+        mApiKey = apiKey;
+        mResetPasswordOtp = resetPasswordOtp;
+        mResetPasswordCreatedAt = resetPasswordCreatedAt;
+    }
+
     private long mCreateDate;
     private String mApiKey;
     private String mResetPasswordOtp;
     private long mResetPasswordCreatedAt;
 
-
-
-
+    @Override
+    public String toString() {
+        return "User{" +
+                "mId=" + mId +
+                ", mFullName='" + mFullName + '\'' +
+                ", mUserName='" + mUserName + '\'' +
+                ", mPassword='" + mPassword + '\'' +
+                ", mEmail='" + mEmail + '\'' +
+                ", mCreateDate=" + mCreateDate +
+                ", mApiKey='" + mApiKey + '\'' +
+                ", mResetPasswordOtp='" + mResetPasswordOtp + '\'' +
+                ", mResetPasswordCreatedAt=" + mResetPasswordCreatedAt +
+                '}';
+    }
 }

@@ -35,6 +35,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:contentDescription="@string/descricao_imagem_fundo"
                     android:scaleType="centerCrop"
                     android:src="@drawable/logo" />
 
@@ -48,20 +49,26 @@
                 android:layout_margin="16dp"
                 android:text="@string/app_name"
                 android:textColor="@android:color/white"
-                android:textSize="24dp"
+                android:textSize="36sp"
                 android:textStyle="bold" />
 
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editText_email_login"
                 style="@style/edit_text"
+                android:layout_height="48dp"
                 android:drawableStart="@drawable/ic_baseline_person_24"
-                android:hint="@string/Email" />
+                android:hint="@string/Email"
+                android:textSize="16sp" />
+
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editText_email_password"
                 style="@style/edit_text"
+                android:layout_height="48dp"
                 android:drawableStart="@drawable/ic_baseline_person_24"
-                android:hint="@string/Senha" />
-
+                android:hint="@string/Senha"
+                android:textSize="16sp" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="match_parent"
@@ -76,6 +83,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
+                android:id="@+id/forgot_password"
                 android:text="@string/EsqueciSe"
                 android:textColor="@color/white"
                 android:textSize="16sp" />
@@ -83,8 +91,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="12dp"
-                android:onClick="ClickMyNext"
-                android:id="@+id/button_abacat"
+                android:id="@+id/button_cadastr"
                 android:text="@string/Cadastrar."
                 android:textColor="@color/white"
                 android:textSize="16sp" />
