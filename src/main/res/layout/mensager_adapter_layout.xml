@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginStart="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/rootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_img_friend_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="48dp">
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_friend_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toEndOf="@+id/card_img_friend_profile"
+                android:text="Projeto XUXU"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_friend_name"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toStartOf="@+id/txt_date"
+                android:layout_toEndOf="@+id/card_img_friend_profile"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Mano hoje eu sai pra compra uns negocio e slk" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/txt_message"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:text="Dec 17" />
+
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:id="@+id/txtnew"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignTop="@+id/txt_friend_name"-->
+<!--                android:layout_marginEnd="20dp"-->
+<!--                android:layout_toEndOf="@id/txt_friend_name"-->
+<!--                android:background="@drawable/text_new"-->
+<!--                android:paddingStart="3dp"-->
+<!--                android:paddingEnd="3dp"-->
+<!--                android:text="@string/neww"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="12dp"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            <View-->
+<!--                android:id="@+id/view_online"-->
+<!--                android:layout_width="13dp"-->
+<!--                android:layout_height="13dp"-->
+<!--                android:layout_alignTop="@id/txt_friend_name"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:background="@drawable/view_online"-->
+<!--                android:visibility="gone"-->
+<!--                tools:visibility="visible" />-->
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
