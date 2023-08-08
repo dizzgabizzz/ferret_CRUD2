@@ -5,8 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:focusableInTouchMode="false"
     android:background="@drawable/background"
     tools:context=".SingUp">
+
+
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -53,6 +58,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 style="@style/edit_text"
                 android:layout_height="48dp"
+                android:id="@+id/editText_User"
                 android:drawableStart="@drawable/ic_baseline_person_24"
                 android:textSize="16sp"
                 android:hint="@string/Nome"
@@ -61,6 +67,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 style="@style/edit_text"
                 android:layout_height="48dp"
+                android:id="@+id/editText_email"
                 android:drawableStart="@drawable/ic_baseline_person_24"
                 android:textSize="16sp"
                 android:hint="@string/Email" />
@@ -69,6 +76,7 @@
                 style="@style/edit_text"
                 android:layout_height="48dp"
                 android:textSize="16sp"
+                android:id="@+id/editText_password"
                 android:drawableStart="@drawable/ic_baseline_person_24"
                 android:hint="@string/Senha" />
 
@@ -76,29 +84,30 @@
                 style="@style/edit_text"
                 android:layout_height="48dp"
                 android:textSize="16sp"
+                android:id="@+id/editText_password2"
                 android:drawableStart="@drawable/ic_baseline_person_24"
                 android:hint="@string/Confirmar" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="match_parent"
+                android:id="@+id/button_sing_up"
                 android:layout_height="wrap_content"
-                android:layout_margin="32dp"
+                android:layout_margin="36dp"
                 android:background="@drawable/shape_button"
                 android:text="@string/Cadastrar"
                 android:textColor="@color/white" />
 
-            <TextView
-                android:layout_width="wrap_content"
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/btn_volta_login"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="16sp"
-                android:id="@+id/have_an_account"
+                android:layout_marginBottom="18dp"
                 android:text="@string/Voltar_Login"
-                android:textColor="@color/white02"
-                android:textSize="16sp" />
-
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
         </LinearLayout>
-
 
     </androidx.cardview.widget.CardView>
 

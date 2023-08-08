@@ -107,6 +107,7 @@ public class Login extends AppCompatActivity {
         }
     }
 
+
     private void showSignUp(){
         Intent mIntent = new Intent(getApplicationContext() , SingUp.class);
         startActivity(mIntent);
