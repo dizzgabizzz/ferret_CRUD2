@@ -1,116 +1,200 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:card_view="http://schemas.android.com/tools"
-    app:cardCornerRadius="15dp"
-    app:cardUseCompatPadding="true"
-    card_view:cardCornerRAdius="5dp">
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:padding="8dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <LinearLayout
-                android:orientation="horizontal"
-
-                android:padding="1dp"
-                android:gravity="center"
-                android:layout_alignParentStart="true"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                <ImageView
-                    android:padding="1dp"
-                    android:src="@drawable/ic_pin"
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"/>
-                <TextView
-                    android:text="Gabizzz"
-                    android:textSize="16sp"
-                    android:layout_margin="5dp"
-                    android:textStyle="bold|normal"
-                    android:textColor="#4C5DC4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+    android:background="@color/purple_600"
+    tools:context=".MainActivity">
 
 
+    <TextView
+        android:id="@+id/tag6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/android_game"
+        android:background="@color/white02"
+        tools:layout_editor_absoluteX="305dp"
+        tools:layout_editor_absoluteY="418dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tag5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pixelart"
+        android:background="@color/white02"
+        tools:layout_editor_absoluteX="238dp"
+        tools:layout_editor_absoluteY="418dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextDate3"
+        android:layout_width="140dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:inputType="date"
+        tools:layout_editor_absoluteX="254dp"
+        tools:layout_editor_absoluteY="341dp"
+        android:background="@color/white02"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/TitleProject"
+        android:layout_width="264dp"
+        android:layout_height="61dp"
+        android:text="@string/bird_gam"
+        android:textSize="48sp"
+        android:visibility="visible"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="119dp" />
+
+    <ImageView
+        android:id="@+id/ImageProject"
+        android:layout_width="109dp"
+        android:layout_height="88dp"
+        app:srcCompat="@drawable/logo"
+        tools:layout_editor_absoluteX="151dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/NickCreate"
+        android:layout_width="85dp"
+        android:layout_height="22dp"
+        android:text="@string/filipissimo"
+        android:background="@color/white02"
+        android:textSize="16sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="151dp"
+        tools:layout_editor_absoluteY="212dp" />
+
+    <TextView
+        android:id="@+id/Create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:background="@color/white02"
+        android:text="@string/criador_do_projeto"
+        tools:layout_editor_absoluteY="212dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/DataStart"
+        android:layout_width="140dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:inputType="date"
+        android:background="@color/white02"
+        tools:layout_editor_absoluteX="254dp"
+        tools:layout_editor_absoluteY="282dp"
+
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/StartData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/inicio"
+        android:background="@color/white02"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="300dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/EndData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fim_previsto"
+        android:background="@color/white02"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="356dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/Description"
+        android:layout_width="308dp"
+        android:layout_height="154dp"
+        android:text="@string/jogo_em_java_leroleroleroleorleorleorljdkajdkajdlkjakldjaldasdjklajdklajdkajdlkajsdlajdlajdlajdkajdajdjaljdaljdaljda"
+        android:background="@color/white02"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="492dp"
+        tools:ignore="MissingConstraints" />
 
 
 
+    <Button
+        android:id="@+id/Send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enviar_convite"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="653dp"
+        tools:ignore="MissingConstraints" />
 
-            </LinearLayout>
-            <LinearLayout
-                android:orientation="horizontal"
+    <TextView
+        android:id="@+id/membros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/membros"
+        android:background="@color/white02"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="667dp"
+        tools:ignore="MissingConstraints" />
 
-                android:padding="1dp"
-                android:gravity="center"
-                android:layout_alignParentEnd="true"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                <ImageView
-                    android:padding="1dp"
-                    android:src="@drawable/ic_arrow"
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"/>
-                <TextView
-                    android:text="Saiba Mais"
-                    android:textSize="16sp"
-                    android:layout_margin="5dp"
-                    android:textStyle="bold|normal"
-                    android:textColor="#2E3D85"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/NumberMembros"
+        android:layout_width="38dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:background="@color/white02"
+        android:inputType="number"
+        android:text="@string/_2"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="652dp"
+        tools:ignore="MissingConstraints" />
 
+    <TextView
+        android:id="@+id/tag1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/games"
+        android:background="@color/white02"
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="418dp"
+        tools:ignore="MissingConstraints" />
 
+    <TextView
+        android:id="@+id/tag2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/java"
+        android:background="@color/white02"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="418dp"
+        tools:ignore="MissingConstraints" />
 
+    <TextView
+        android:id="@+id/tag3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/c"
+        android:background="@color/white02"
+        tools:layout_editor_absoluteX="134dp"
+        tools:layout_editor_absoluteY="418dp"
+        tools:ignore="MissingConstraints" />
 
-
-
-            </LinearLayout>
-        </RelativeLayout>
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <ImageView
-                android:padding="2dp"
-                android:src="@drawable/ic_pin"
-                android:layout_width="35dp"
-                android:layout_height="40dp"/>
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:text="Projeto Abobrinha"
-                    android:textSize="17sp"
-                    android:textColor="@color/black"
-                    android:textStyle="bold"
-                    android:gravity="center"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-
-                <TextView
-                    android:text="Este projeto é sobre \bla bla bla bllala
-bora billlllllllllllllllllllllllllllllll"
-                    android:textSize="13sp"
-                    android:textColor="@color/black"
-                    android:textStyle="normal"
-                    android:textAlignment="textStart"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    card_view:ignore="RtlCompat"/>
-
+    <TextView
+        android:id="@+id/tag4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/m_sica"
+        android:background="@color/white02"
+        tools:layout_editor_absoluteX="175dp"
+        tools:layout_editor_absoluteY="418dp"
+        tools:ignore="MissingConstraints" />
 
 
-            </LinearLayout>
-
-
-        </LinearLayout>
-    </LinearLayout>
-</androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -34,10 +34,10 @@ public class SingUp2 extends AppCompatActivity {
     private boolean isRequired(){
 
         if(TextUtils.isEmpty(mEditTextFullName.getText()) ||
-        TextUtils.isEmpty(mEditTextEmail.getText()) ||
-        TextUtils.isEmpty(mEditTextUserName.getText()) ||
-        TextUtils.isEmpty(mEditTextPassword.getText()) ||
-        TextUtils.isEmpty(mEditTextPassword2.getText())
+                TextUtils.isEmpty(mEditTextEmail.getText()) ||
+                TextUtils.isEmpty(mEditTextUserName.getText()) ||
+                TextUtils.isEmpty(mEditTextPassword.getText()) ||
+                TextUtils.isEmpty(mEditTextPassword2.getText())
         ){
             return true;
         } else {
@@ -114,7 +114,7 @@ public class SingUp2 extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.cadastro);
+        setContentView(R.layout.activity_cadastro);
 
         mEditTextEmail = findViewById(R.id.editText_email);
 

@@ -100,6 +100,7 @@ public class Login extends AppCompatActivity {
         finish();
     }
 
+
     public class ClickMyButtonLogin implements View.OnClickListener{
         @Override
         public void onClick(View view) {
@@ -148,7 +149,7 @@ public class Login extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login);
+        setContentView(R.layout.activity_login);
 
         mEditTextEmail = findViewById(R.id.editText_email_login);
 
@@ -169,5 +170,4 @@ public class Login extends AppCompatActivity {
         verifyLogged();
     }
 }
-
 

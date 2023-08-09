@@ -23,6 +23,8 @@ public class MSSQLConnectionHelper {
 
     private static String mStringDatabase = "NewFerret";
 
+    private static String mStringPort = "8080";
+
     public static Connection getConnection(Context mContext) {
 
         Connection mConnection = null;
@@ -31,12 +33,20 @@ public class MSSQLConnectionHelper {
             StrictMode.ThreadPolicy mPolicy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
             StrictMode.setThreadPolicy((mPolicy));
 
-            Class.forName("net.sourceforge.jtds.jdbc.Driver");
+         //   Class.forName("net.sourceforge.jtds.jdbc.Driver");
 
-            mStringConnectionUrl = "jdbc:jtds:sqlserver://" + mStringServerIpName +
-                    ";databaseName=" + mStringDatabase +
-                    ";user=" + mStringUserName +
-                    ";password=" + mStringPassword + ";" ;
+           // mStringConnectionUrl = "jdbc:jtds:sqlserver://" + mStringServerIpName +
+             //       ";databaseName=" + mStringDatabase +
+               //     ";user=" + mStringUserName +
+                 //   ";password=" + mStringPassword + ";" ;
+
+            Class.forName("com.mysql.jdbc.Driver");
+            mStringConnectionUrl = "jdbc:mysql://" +
+                    mStringServerIpName + ":" +
+                    mStringPort + "/" +
+                    mStringDatabase + ","+
+                    mStringUserName + "," +
+                    mStringPassword + ";" ;
 
 
             mConnection = DriverManager.getConnection(mStringConnectionUrl);
